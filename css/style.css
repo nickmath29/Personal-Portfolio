@@ -7,5 +7,20 @@
 }
 
 #nav_links{
+    display: flex;
     text-align: center;
+}
+#nav-link:hover {
+    color: green; /* Change color on hover for better interactivity */
+}
+
+#nav-link:focus {
+    color: green; /* Change color on hover for better interactivity */
+}
+
+@media (min-width: 670px) {
+    #nav_links{
+        display: block;
+        text-align: center;
+    }
 }
