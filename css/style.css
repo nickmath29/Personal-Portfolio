@@ -7,8 +7,10 @@
 }
 
 #nav_links{
-    display: flex;
-    text-align: center;
+    display: grid;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align:center;
 }
 #nav-link:hover {
     color: green; /* Change color on hover for better interactivity */
@@ -18,9 +20,14 @@
     color: green; /* Change color on hover for better interactivity */
 }
 
+header{
+    
+}
+
 @media (min-width: 670px) {
     #nav_links{
-        display: block;
-        text-align: center;
+        display: grid; /* Use grid layout */
+        grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+        gap: 20px; /* Add spacing between the columns */
     }
 }
