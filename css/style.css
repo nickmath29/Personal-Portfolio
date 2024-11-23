@@ -6,13 +6,15 @@
     text-align: center;
 }
 
-#nav_links{
+
+
+.htmlLinks{
+    text-decoration: none; 
     display: grid;
-    text-decoration: none;
     padding: 5px 10px;
     text-align:center;
 }
-#htmlLink:hover {
+.htmlLink:hover {
     color: green; /* Change color on hover for better interactivity */
 }
 
@@ -20,14 +22,42 @@
     color: green; /* Change color on hover for better interactivity */
 }
 
-header{
+.hidden-link {
+    color: inherit; 
+    text-decoration: none; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.5s ease-in-out; 
+}
 
+/* Make the link visible on hover or focus */
+.hidden-link:hover,
+.hidden-link:focus {
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Enable mouse interactions */
+}
+
+/* Ensure the link is tabbable even when hidden */
+header {
+    position: relative; /* Define a containing area */
+    height: 50px; /* Adjust as needed for hover area */
+    background-color: grey;
+}
+
+.hidden-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav{
+    background-color: grey;
 }
 
 @media (min-width: 670px) {
     #nav_links{
         display: grid; /* Use grid layout */
-        grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+        grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
         gap: 20px; /* Add spacing between the columns */
     }
 }
