@@ -82,6 +82,7 @@ body {
 h1, h2, h3 {
     color: #0056b3;
 }
+
 img {
     max-width: 100%;
     border-radius: 10px;
@@ -106,4 +107,12 @@ ul {
     margin-top: 20px;
     font-size: 0.9em;
     color: #666;
+}
+
+#gallery{
+    text-decoration: none; 
+    display: grid;
+    padding: 5px 10px;
+    text-align:center;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
 }
