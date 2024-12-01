@@ -41,7 +41,7 @@
 header {
     position: relative; /* Define a containing area */
     height: 50px; /* Adjust as needed for hover area */
-    background-color: #DDDDDD;
+    background-color: #E0E0E0;
 }
 
 .hidden-link {
@@ -51,7 +51,7 @@ header {
 }
 
 nav{
-    background-color: grey;
+    background-color:#E0E0E0;
 }
 
 @media (min-width: 670px) {
