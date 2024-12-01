@@ -61,6 +61,16 @@ nav{
         grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
         gap: 20px; /* Add spacing between the columns */
     }
+    h1:hover, h2:hover, h3:hover{
+        font-size: 2rem; 
+        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        color: black;
+    }
+    h1:focus, h2:focus, h3:focus{
+        font-size: 2rem; 
+        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        color: black;
+    }
 }
 
 
