@@ -13,6 +13,7 @@
     display: grid;
     padding: 5px 10px;
     text-align:center;
+    color: #FFFF99;
 }
 .htmlLink:hover {
     color: green; /* Change color on hover for better interactivity */
