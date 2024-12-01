@@ -41,7 +41,7 @@
 header {
     position: relative; /* Define a containing area */
     height: 50px; /* Adjust as needed for hover area */
-    background-color: grey;
+    background-color: #DDDDDD;
 }
 
 .hidden-link {
