@@ -9,11 +9,10 @@
 
 
 .htmlLinks{
-    text-decoration: none; 
     display: grid;
     padding: 5px 10px;
     text-align:center;
-    color: #FFFF99;
+    text-decoration: #FFFF99;
 }
 .htmlLink:hover {
     color: green; /* Change color on hover for better interactivity */
