@@ -1,7 +1,7 @@
 
 .profile-pic {
-    width: 200px;          /* Control size */
-    height: auto;          /* Keep natural aspect ratio */
+    width: 288px;          /* Control size */
+    height: 340px;          /* Keep natural aspect ratio */
     border-radius: 50%;    /* Optional: makes it circular */
     object-fit: cover;     /* Ensures it looks clean inside frame */
 }
@@ -188,7 +188,12 @@ ul {
     padding-left: 20px;
 }
 .section {
-    margin-bottom: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .program-summary {
     background: #eaf7ff;
