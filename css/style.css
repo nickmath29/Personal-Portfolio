@@ -1,3 +1,94 @@
+
+.profile-pic {
+    width: 200px;          /* Control size */
+    height: auto;          /* Keep natural aspect ratio */
+    border-radius: 50%;    /* Optional: makes it circular */
+    object-fit: cover;     /* Ensures it looks clean inside frame */
+}
+
+
+.content-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.in-progress {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.work-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.work-img:hover {
+  transform: scale(1.05);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 #name{
     text-align:center;
 }
@@ -5,8 +96,6 @@
 #about-me{
     text-align: center;
 }
-
-
 
 .htmlLinks{
     display: grid;
@@ -27,14 +116,14 @@
     text-decoration: none; 
     opacity: 0; 
     pointer-events: none; 
-    transition: opacity 0.5s ease-in-out; 
+    transition: opacity 0.9s ease-in-out; /* already exists */
 }
-
 .hidden-link:hover,
 .hidden-link:focus {
     opacity: 1;
     pointer-events: auto; 
 }
+
 
 header {
     position: relative; 
@@ -59,14 +148,10 @@ nav{
         grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
         gap: 20px; /* Add spacing between the columns */
     }
-    h1:hover, h2:hover, h3:hover{
-        font-size: 2rem; 
-        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
-        color: black;
-    }
+    h1:hover, h2:hover, h3:hover,
     h1:focus, h2:focus, h3:focus{
         font-size: 2rem; 
-        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        transition: transform 0.8s ease-in-out, font-size 0.8s ease-in-out, color 0.8s ease-in-out;
         color: black;
     }
 }
